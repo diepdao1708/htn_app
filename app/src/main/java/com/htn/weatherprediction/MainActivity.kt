@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                     val weather = if (list != null && list.isNotEmpty()) list[0] else null
                     if (weather != null) {
                         changeIcon(weather.guess)
-                        binding.dateTxt.text = "Data got at: ${weather.date}"
+                        binding.dateTxt.text = "Data got at:\n${weather.date}"
                         binding.temperature.text = weather.temp.toString()
                         binding.predict.text = weather.guess
                         binding.pressureTxt.text = weather.pressure.toString()
